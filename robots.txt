@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://flashimagepreview.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Allow all image and CSS files
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Block admin and private directories (if any exist in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Block common non-essential files
+Disallow: *.json$
+Disallow: *.log$
+Disallow: *.txt$
+
+# Allow robots.txt and ads.txt
+Allow: /robots.txt
+Allow: /ads.txt
