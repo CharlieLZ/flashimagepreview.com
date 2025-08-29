@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Ultimate Web Image Optimization Guide for 2025 - Flash Image Preview</title>
+    <meta name="description" content="Master web image optimization with this comprehensive 2025 guide. Learn advanced compression techniques, modern formats (WebP, AVIF), performance optimization, and responsive image strategies.">
+    <meta name="keywords" content="image optimization, WebP, AVIF, image compression, responsive images, Core Web Vitals, web performance, image loading">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Flash Image Preview Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ultimate Web Image Optimization Guide for 2025">
+    <meta property="og:description" content="Complete guide to web image optimization covering modern formats, compression techniques, and performance strategies for 2025.">
+    <meta property="og:image" content="https://flashimagepreview.com/assets/images/image-processing-tools.jpg">
+    <meta property="og:url" content="https://flashimagepreview.com/blog/ultimate-web-image-optimization-guide">
+    <meta property="og:type" content="article">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://flashimagepreview.com/blog/ultimate-web-image-optimization-guide">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Analytics & Tracking -->
+    <script defer data-domain="flashimagepreview.com" src="https://click.pageview.click/js/script.js"></script>
+    
+    <!-- Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ultimate Web Image Optimization Guide for 2025",
+        "description": "Complete guide to web image optimization covering modern formats, compression techniques, and performance strategies for 2025.",
+        "image": "https://flashimagepreview.com/assets/images/image-processing-tools.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Flash Image Preview Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Flash Image Preview",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://flashimagepreview.com/assets/images/logo.png"
+            }
+        },
+        "datePublished": "2025-01-10",
+        "dateModified": "2025-01-10"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">🖼️ FlashImagePreview</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/tools">Tools</a></li>
+                    <li><a href="/blog" class="active">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="section">
+        <div class="container">
+            <article class="blog-post">
+                <header class="post-header">
+                    <div class="breadcrumb">
+                        <a href="/">Home</a> → <a href="/blog">Blog</a> → Ultimate Web Image Optimization Guide
+                    </div>
+                    <h1>Ultimate Web Image Optimization Guide for 2025</h1>
+                    <div class="post-meta">
+                        <span class="category">Guide</span>
+                        <time datetime="2025-01-10">January 10, 2025</time>
+                        <span>•</span>
+                        <span>15 min read</span>
+                        <span>•</span>
+                        <span>Comprehensive Guide</span>
+                    </div>
+                    <img src="../assets/images/image-processing-tools.jpg" alt="Web Image Optimization Tools and Techniques" class="featured-image">
+                </header>
+
+                <div class="post-content">
+                    <h2>Why Image Optimization Matters in 2025</h2>
+                    <p>Images typically account for 60-80% of web page data transfer, making image optimization crucial for website performance, user experience, and search engine rankings. With Core Web Vitals becoming increasingly important for SEO and user satisfaction, implementing comprehensive image optimization strategies is essential for success in 2025.</p>
+                    
+                    <p>Modern web users expect fast-loading websites across all devices. Slow-loading images directly impact bounce rates, conversion rates, and overall user engagement. Additionally, search engines like Google use page loading speed as a ranking factor, making image optimization a critical SEO strategy.</p>
+
+                    <h2>🎯 Core Web Vitals and Image Performance</h2>
+                    <p>Google's Core Web Vitals measure real-world user experience, and images significantly impact all three metrics:</p>
+
+                    <ul>
+                        <li><strong>Largest Contentful Paint (LCP):</strong> Often caused by large hero images or unoptimized media</li>
+                        <li><strong>First Input Delay (FID):</strong> Affected by JavaScript processing large image files</li>
+                        <li><strong>Cumulative Layout Shift (CLS):</strong> Caused by images loading without proper dimensions</li>
+                    </ul>
+
+                    <h3>Measuring Image Performance</h3>
+                    <p>Use these tools to assess your current image performance:</p>
+                    <ul>
+                        <li>Google PageSpeed Insights</li>
+                        <li>GTmetrix</li>
+                        <li>Chrome DevTools Performance tab</li>
+                        <li>WebPageTest.org</li>
+                        <li>Lighthouse audits</li>
+                    </ul>
+
+                    <h2>🖼️ Modern Image Formats: A Complete Guide</h2>
+                    <p>Choosing the right image format is the foundation of effective optimization. In 2025, we have access to powerful next-generation formats that provide superior compression and quality.</p>
+
+                    <h3>AVIF: The New Champion</h3>
+                    <p>AV1 Image File Format (AVIF) provides the best compression efficiency currently available, often reducing file sizes by 50-90% compared to JPEG while maintaining superior quality.</p>
+
+                    <pre><code>// AVIF implementation with fallbacks
+&lt;picture&gt;
+    &lt;source srcset="hero-image.avif" type="image/avif"&gt;
+    &lt;source srcset="hero-image.webp" type="image/webp"&gt;
+    &lt;img src="hero-image.jpg" alt="Hero image" loading="lazy"&gt;
+&lt;/picture&gt;</code></pre>
+
+                    <p><strong>AVIF Benefits:</strong></p>
+                    <ul>
+                        <li>Best-in-class compression efficiency</li>
+                        <li>Support for transparency and animation</li>
+                        <li>Wide color gamut and HDR support</li>
+                        <li>Lossless and lossy compression options</li>
+                    </ul>
+
+                    <h3>WebP: The Reliable Alternative</h3>
+                    <p>WebP offers excellent browser support and substantial file size reductions compared to traditional formats.</p>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Format</th>
+                                <th>File Size</th>
+                                <th>Quality</th>
+                                <th>Browser Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>JPEG</td>
+                                <td>100KB</td>
+                                <td>Good</td>
+                                <td>Universal</td>
+                            </tr>
+                            <tr>
+                                <td>WebP</td>
+                                <td>65KB (-35%)</td>
+                                <td>Better</td>
+                                <td>96%</td>
+                            </tr>
+                            <tr>
+                                <td>AVIF</td>
+                                <td>45KB (-55%)</td>
+                                <td>Best</td>
+                                <td>89%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="video-embed">
+                        <h4>📹 Modern Image Formats Comparison</h4>
+                        <p>This comprehensive video compares AVIF, WebP, and traditional formats with real-world examples and performance benchmarks.</p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F1kYBnY6mwg" 
+                                    title="WebP vs AVIF vs JPEG Image Format Comparison" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><em>Key insights: AVIF provides up to 50% better compression than WebP, while WebP offers 25-35% better compression than JPEG with wider browser support.</em></p>
+                    </div>
+
+                    <h2>⚙️ Advanced Compression Techniques</h2>
+                    <p>Beyond format selection, advanced compression techniques can dramatically reduce file sizes while maintaining visual quality.</p>
+
+                    <h3>Intelligent Quality Settings</h3>
+                    <p>Different types of images require different optimization approaches:</p>
+
+                    <ul>
+                        <li><strong>Photographs:</strong> JPEG quality 75-85, WebP quality 75-90, AVIF quality 50-70</li>
+                        <li><strong>Graphics with text:</strong> PNG for transparency, WebP/AVIF for better compression</li>
+                        <li><strong>Screenshots:</strong> PNG or WebP lossless for crisp text</li>
+                        <li><strong>Icons and simple graphics:</strong> SVG when possible, PNG as fallback</li>
+                    </ul>
+
+                    <h3>Progressive Enhancement Strategy</h3>
+                    <pre><code>// JavaScript-based format detection and serving
+function supportsWebP() {
+    const canvas = document.createElement('canvas');
+    canvas.width = canvas.height = 1;
+    return canvas.toDataURL('image/webp').indexOf('webp') !== -1;
+}
+
+function supportsAVIF() {
+    const canvas = document.createElement('canvas');
+    canvas.width = canvas.height = 1;
+    return canvas.toDataURL('image/avif').indexOf('avif') !== -1;
+}
+
+function getOptimalImageSrc(baseName) {
+    if (supportsAVIF()) return `${baseName}.avif`;
+    if (supportsWebP()) return `${baseName}.webp`;
+    return `${baseName}.jpg`;
+}
+
+// Usage
+document.getElementById('hero-img').src = getOptimalImageSrc('hero-image');</code></pre>
+
+                    <h2>📱 Responsive Images and Adaptive Loading</h2>
+                    <p>Responsive images ensure users receive appropriately sized images for their devices and connection speeds.</p>
+
+                    <h3>Responsive Images Implementation</h3>
+                    <pre><code>&lt;img 
+    srcset="small.avif 480w,
+            medium.avif 768w,
+            large.avif 1200w,
+            xlarge.avif 1920w"
+    sizes="(max-width: 480px) 100vw,
+           (max-width: 768px) 80vw,
+           (max-width: 1200px) 70vw,
+           60vw"
+    src="medium.jpg"
+    alt="Responsive image example"
+    loading="lazy"
+    decoding="async"
+&gt;</code></pre>
+
+                    <h3>Art Direction with Picture Element</h3>
+                    <pre><code>&lt;picture&gt;
+    &lt;!-- Mobile: Cropped version --&gt;
+    &lt;source media="(max-width: 480px)" 
+            srcset="mobile-crop.avif" 
+            type="image/avif"&gt;
+    &lt;source media="(max-width: 480px)" 
+            srcset="mobile-crop.webp" 
+            type="image/webp"&gt;
+    
+    &lt;!-- Desktop: Full image --&gt;
+    &lt;source srcset="desktop-full.avif" type="image/avif"&gt;
+    &lt;source srcset="desktop-full.webp" type="image/webp"&gt;
+    
+    &lt;img src="desktop-full.jpg" alt="Art-directed image"&gt;
+&lt;/picture&gt;</code></pre>
+
+                    <h2>🚀 Loading Optimization Strategies</h2>
+                    <p>How and when images load significantly impacts perceived performance and user experience.</p>
+
+                    <h3>Lazy Loading Implementation</h3>
+                    <p>Native lazy loading is now supported in most browsers:</p>
+
+                    <pre><code>&lt;img src="image.jpg" 
+     alt="Description" 
+     loading="lazy" 
+     decoding="async"&gt;</code></pre>
+
+                    <p>For enhanced control, implement JavaScript-based lazy loading:</p>
+
+                    <pre><code>// Advanced lazy loading with Intersection Observer
+const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            
+            // Load high-quality image
+            const highQualitySrc = img.dataset.src;
+            
+            img.src = highQualitySrc;
+            img.classList.remove('lazy');
+            img.classList.add('loaded');
+            
+            observer.unobserve(img);
+        }
+    });
+}, {
+    rootMargin: '50px 0px',
+    threshold: 0.01
+});
+
+document.querySelectorAll('img[data-src]').forEach(img => {
+    imageObserver.observe(img);
+});</code></pre>
+
+                    <h3>Progressive Image Loading</h3>
+                    <p>Implement progressive loading for better perceived performance:</p>
+
+                    <pre><code>// Progressive JPEG with blur-up technique
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: opacity 0.3s;
+}
+
+.image-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-full.loaded {
+    opacity: 1;
+}</code></pre>
+
+                    <h2>🔧 Advanced Optimization Tools and Techniques</h2>
+                    <p>Leverage modern tools and techniques for maximum optimization efficiency.</p>
+
+                    <h3>Build Process Integration</h3>
+                    <p>Automate image optimization in your build process:</p>
+
+                    <pre><code>// webpack.config.js - Image optimization
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+
+module.exports = {
+    plugins: [
+        new ImageMinimizerPlugin({
+            minimizer: {
+                implementation: ImageMinimizerPlugin.sharpMinify,
+                options: {
+                    encodeOptions: {
+                        jpeg: { quality: 80, progressive: true },
+                        webp: { quality: 80 },
+                        avif: { quality: 50 },
+                        png: { compressionLevel: 9 }
+                    }
+                }
+            },
+            generator: [
+                {
+                    preset: 'webp-custom',
+                    implementation: ImageMinimizerPlugin.sharpGenerate,
+                    options: {
+                        encodeOptions: { webp: { quality: 80 } }
+                    }
+                },
+                {
+                    preset: 'avif-custom',
+                    implementation: ImageMinimizerPlugin.sharpGenerate,
+                    options: {
+                        encodeOptions: { avif: { quality: 50 } }
+                    }
+                }
+            ]
+        })
+    ]
+};</code></pre>
+
+                    <h3>CDN and Edge Optimization</h3>
+                    <p>Modern CDNs provide automatic image optimization:</p>
+
+                    <ul>
+                        <li><strong>Cloudinary:</strong> Automatic format selection and quality optimization</li>
+                        <li><strong>Cloudflare Images:</strong> Real-time resizing and format conversion</li>
+                        <li><strong>AWS CloudFront:</strong> Integration with Lambda@Edge for image processing</li>
+                        <li><strong>KeyCDN:</strong> Automatic WebP conversion</li>
+                    </ul>
+
+                    <div class="video-embed">
+                        <h4>📹 Advanced Image Optimization Workflow</h4>
+                        <p>Learn how to set up an automated image optimization pipeline using modern tools and services.</p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7A24Ocvp-k" 
+                                    title="Advanced Image Optimization Techniques 2024" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><em>This tutorial covers build automation, CDN integration, and performance monitoring for optimal image delivery across all devices and connection speeds.</em></p>
+                    </div>
+
+                    <h2>📊 Performance Monitoring and Analytics</h2>
+                    <p>Continuous monitoring ensures your optimization efforts deliver real-world improvements.</p>
+
+                    <h3>Key Performance Metrics</h3>
+                    <ul>
+                        <li><strong>Image Load Time:</strong> Time from request to complete render</li>
+                        <li><strong>Total Image Weight:</strong> Combined size of all page images</li>
+                        <li><strong>Cache Hit Rate:</strong> Percentage of images served from cache</li>
+                        <li><strong>Format Adoption:</strong> Usage of modern formats vs legacy</li>
+                        <li><strong>Conversion Impact:</strong> Correlation between image performance and business metrics</li>
+                    </ul>
+
+                    <h3>Monitoring Implementation</h3>
+                    <pre><code>// Performance monitoring script
+function trackImagePerformance() {
+    const observer = new PerformanceObserver((list) => {
+        list.getEntries().forEach((entry) => {
+            if (entry.name.match(/\.(jpg|jpeg|png|gif|webp|avif)$/i)) {
+                // Track image loading metrics
+                gtag('event', 'image_load', {
+                    'custom_parameter_1': entry.name,
+                    'custom_parameter_2': entry.duration,
+                    'custom_parameter_3': entry.transferSize
+                });
+            }
+        });
+    });
+    
+    observer.observe({entryTypes: ['resource']});
+}
+
+// Initialize tracking
+trackImagePerformance();</code></pre>
+
+                    <h2>🎨 Visual Quality Assessment</h2>
+                    <p>Balancing file size reduction with visual quality requires systematic assessment techniques.</p>
+
+                    <h3>Automated Quality Testing</h3>
+                    <pre><code>// SSIM (Structural Similarity Index) implementation
+function calculateSSIM(img1, img2) {
+    // Simplified SSIM calculation
+    const canvas1 = document.createElement('canvas');
+    const canvas2 = document.createElement('canvas');
+    const ctx1 = canvas1.getContext('2d');
+    const ctx2 = canvas2.getContext('2d');
+    
+    // Draw images and get pixel data
+    ctx1.drawImage(img1, 0, 0);
+    ctx2.drawImage(img2, 0, 0);
+    
+    const data1 = ctx1.getImageData(0, 0, canvas1.width, canvas1.height);
+    const data2 = ctx2.getImageData(0, 0, canvas2.width, canvas2.height);
+    
+    // Calculate SSIM score (simplified version)
+    // Returns value between 0 and 1, where 1 is perfect similarity
+    return calculateSimilarityScore(data1, data2);
+}</code></pre>
+
+                    <h2>🔮 Future-Proofing Your Image Strategy</h2>
+                    <p>Prepare for upcoming technologies and standards that will shape image optimization in the coming years.</p>
+
+                    <h3>Emerging Technologies</h3>
+                    <ul>
+                        <li><strong>JPEG XL:</strong> Next-generation format with superior compression</li>
+                        <li><strong>HTTP/3:</strong> Improved loading performance for multiple images</li>
+                        <li><strong>Variable Quality AVIF:</strong> Quality adaptation based on viewport</li>
+                        <li><strong>AI-powered optimization:</strong> Machine learning for optimal compression</li>
+                    </ul>
+
+                    <h3>Implementation Roadmap</h3>
+                    <ol>
+                        <li><strong>Immediate (0-3 months):</strong> Implement WebP with JPEG fallbacks</li>
+                        <li><strong>Short-term (3-6 months):</strong> Add AVIF support for supported browsers</li>
+                        <li><strong>Medium-term (6-12 months):</strong> Implement advanced lazy loading and responsive images</li>
+                        <li><strong>Long-term (1+ years):</strong> Evaluate JPEG XL and emerging formats</li>
+                    </ol>
+
+                    <h2>✅ Image Optimization Checklist</h2>
+                    <p>Use this comprehensive checklist to ensure optimal image performance:</p>
+
+                    <h3>Format and Compression</h3>
+                    <ul>
+                        <li>☐ Implement AVIF with WebP and JPEG fallbacks</li>
+                        <li>☐ Use appropriate quality settings per format</li>
+                        <li>☐ Enable progressive JPEG for large images</li>
+                        <li>☐ Optimize PNG files with tools like TinyPNG</li>
+                        <li>☐ Use SVG for simple graphics and icons</li>
+                    </ul>
+
+                    <h3>Responsive Implementation</h3>
+                    <ul>
+                        <li>☐ Implement srcset for different screen sizes</li>
+                        <li>☐ Use picture element for art direction</li>
+                        <li>☐ Set appropriate sizes attribute</li>
+                        <li>☐ Include width and height attributes</li>
+                    </ul>
+
+                    <h3>Loading Optimization</h3>
+                    <ul>
+                        <li>☐ Enable native lazy loading</li>
+                        <li>☐ Use async decoding</li>
+                        <li>☐ Implement critical image preloading</li>
+                        <li>☐ Optimize above-the-fold images</li>
+                    </ul>
+
+                    <h3>Performance Monitoring</h3>
+                    <ul>
+                        <li>☐ Set up Core Web Vitals monitoring</li>
+                        <li>☐ Track image loading performance</li>
+                        <li>☐ Monitor format adoption rates</li>
+                        <li>☐ Analyze user experience metrics</li>
+                    </ul>
+
+                    <h2>📈 Measuring Success</h2>
+                    <p>Track these key performance indicators to measure optimization success:</p>
+
+                    <ul>
+                        <li><strong>Page Load Time:</strong> Target 20-40% reduction</li>
+                        <li><strong>Largest Contentful Paint:</strong> Under 2.5 seconds</li>
+                        <li><strong>Total Page Weight:</strong> Target 30-50% reduction</li>
+                        <li><strong>Bounce Rate:</strong> Expect improvement as loading speeds increase</li>
+                        <li><strong>Conversion Rate:</strong> Monitor impact on business metrics</li>
+                    </ul>
+
+                    <h2>🏆 Conclusion</h2>
+                    <p>Image optimization in 2025 requires a comprehensive approach combining modern formats, intelligent compression, responsive implementation, and continuous monitoring. By following this guide, you'll significantly improve website performance, user experience, and search engine rankings.</p>
+                    
+                    <p>Remember that image optimization is an ongoing process. Regularly audit your implementation, stay updated with emerging technologies, and continuously monitor performance to ensure optimal results. The investment in proper image optimization pays dividends in improved user satisfaction, better SEO rankings, and increased conversions.</p>
+
+                    <div class="post-tags">
+                        <span class="tag">Image Optimization</span>
+                        <span class="tag">WebP</span>
+                        <span class="tag">AVIF</span>
+                        <span class="tag">Performance</span>
+                        <span class="tag">Core Web Vitals</span>
+                    </div>
+                </div>
+
+                <footer class="post-footer">
+                    <div class="author-bio">
+                        <h4>About the Author</h4>
+                        <p>The Flash Image Preview team specializes in web performance optimization and image processing technologies, helping thousands of websites achieve better performance and user experience.</p>
+                    </div>
+                    
+                    <div class="post-navigation">
+                        <a href="/blog/evolution-flash-modern-web-standards" class="nav-link prev">← Previous: Evolution from Flash to Modern Web Standards</a>
+                        <a href="/blog/building-interactive-games-html5-canvas" class="nav-link next">Next: Building Interactive Games with HTML5 Canvas →</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🖼️ Flash Image Preview</h3>
+                    <p>Professional HTML5 canvas-based image preview platform with interactive games and advanced processing capabilities.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Blog Categories</h3>
+                    <ul>
+                        <li><a href="/blog/category/tutorials">Tutorials</a></li>
+                        <li><a href="/blog/category/technology">Technology</a></li>
+                        <li><a href="/blog/category/development">Development</a></li>
+                        <li><a href="/blog/category/performance">Performance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/tools">Free Tools</a></li>
+                        <li><a href="/api-docs">API Documentation</a></li>
+                        <li><a href="/resources">Downloads</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flash Image Preview. All rights reserved. | Expert insights on HTML5 canvas and professional image processing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
