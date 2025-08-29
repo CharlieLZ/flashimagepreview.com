@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>HTML5 Canvas & Image Processing Tutorials - Learn Professional Web Development</title>
+    <meta name="description" content="Comprehensive tutorials on HTML5 Canvas, image processing, web development, and professional image editing techniques. Learn from beginner to advanced levels with hands-on examples.">
+    <meta name="keywords" content="HTML5 canvas tutorials, image processing tutorials, web development guides, JavaScript image editing, canvas programming, professional web development">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Professional Web Development Tutorials - HTML5 Canvas & Image Processing">
+    <meta property="og:description" content="Learn HTML5 Canvas, image processing, and professional web development with comprehensive tutorials and hands-on examples.">
+    <meta property="og:image" content="https://flashimagepreview.com/assets/images/og-image.png">
+    <meta property="og:url" content="https://flashimagepreview.com/tutorials">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://flashimagepreview.com/tutorials">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Analytics & Tracking -->
+    <script defer data-domain="flashimagepreview.com" src="https://click.pageview.click/js/script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">🖼️ FlashImagePreview</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/tools">Tools</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/es" class="lang-switch">Español</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Web Development Tutorials</h1>
+            <p>Master HTML5 Canvas, image processing, and modern web development with comprehensive tutorials designed for developers, designers, and creative professionals.</p>
+        </div>
+    </section>
+
+    <!-- Tutorial Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="tutorial-categories">
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="beginner">Beginner</button>
+                    <button class="category-btn" data-category="intermediate">Intermediate</button>
+                    <button class="category-btn" data-category="advanced">Advanced</button>
+                    <button class="category-btn" data-category="expert">Expert</button>
+                </div>
+
+                <!-- Beginner Tutorials -->
+                <div class="tutorial-category active" data-category="beginner">
+                    <h2 class="category-title">🌱 Beginner Tutorials</h2>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card featured">
+                            <div class="tutorial-image">
+                                <img src="assets/images/html5-canvas-development.jpg" alt="HTML5 Canvas Complete Guide" loading="lazy">
+                            </div>
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Beginner</span>
+                                    <span class="tutorial-duration">45 minutes</span>
+                                    <span class="tutorial-lessons">12 lessons</span>
+                                </div>
+                                <h3>Complete HTML5 Canvas Guide for Beginners</h3>
+                                <p>Comprehensive introduction to HTML5 Canvas API covering basic drawing, image manipulation, animations, and interactive features. Perfect for developers new to canvas programming.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Canvas Basics</span>
+                                    <span class="topic-tag">Drawing API</span>
+                                    <span class="topic-tag">Image Loading</span>
+                                    <span class="topic-tag">Event Handling</span>
+                                </div>
+                                <a href="/blog/html5-canvas-complete-guide" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Beginner</span>
+                                    <span class="tutorial-duration">30 minutes</span>
+                                    <span class="tutorial-lessons">8 lessons</span>
+                                </div>
+                                <h3>JavaScript Image Processing Fundamentals</h3>
+                                <p>Learn the basics of image processing in JavaScript, including pixel manipulation, color theory, and basic filters using HTML5 Canvas.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Pixel Data</span>
+                                    <span class="topic-tag">Color Channels</span>
+                                    <span class="topic-tag">Basic Filters</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Beginner</span>
+                                    <span class="tutorial-duration">25 minutes</span>
+                                    <span class="tutorial-lessons">6 lessons</span>
+                                </div>
+                                <h3>Building Your First Image Viewer</h3>
+                                <p>Step-by-step guide to creating a functional image viewer with zoom, pan, and basic controls using HTML5 Canvas and JavaScript.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">File Upload</span>
+                                    <span class="topic-tag">Image Display</span>
+                                    <span class="topic-tag">User Controls</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Beginner</span>
+                                    <span class="tutorial-duration">35 minutes</span>
+                                    <span class="tutorial-lessons">10 lessons</span>
+                                </div>
+                                <h3>Introduction to Web Image Formats</h3>
+                                <p>Understand different image formats (JPEG, PNG, WebP, AVIF) and learn when to use each format for optimal web performance and quality.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Image Formats</span>
+                                    <span class="topic-tag">Compression</span>
+                                    <span class="topic-tag">Web Performance</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Beginner</span>
+                                    <span class="tutorial-duration">40 minutes</span>
+                                    <span class="tutorial-lessons">11 lessons</span>
+                                </div>
+                                <h3>Responsive Image Design Basics</h3>
+                                <p>Learn to create responsive images that look great on all devices, including proper sizing, loading strategies, and mobile optimization.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Responsive Design</span>
+                                    <span class="topic-tag">Mobile Optimization</span>
+                                    <span class="topic-tag">Performance</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate Tutorials -->
+                <div class="tutorial-category" data-category="intermediate">
+                    <h2 class="category-title">🚀 Intermediate Tutorials</h2>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Intermediate</span>
+                                    <span class="tutorial-duration">90 minutes</span>
+                                    <span class="tutorial-lessons">18 lessons</span>
+                                </div>
+                                <h3>Advanced Image Processing Techniques</h3>
+                                <p>Deep dive into sophisticated image processing algorithms including convolution filters, edge detection, noise reduction, and custom effect creation.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Convolution</span>
+                                    <span class="topic-tag">Edge Detection</span>
+                                    <span class="topic-tag">Custom Filters</span>
+                                    <span class="topic-tag">Noise Reduction</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Intermediate</span>
+                                    <span class="tutorial-duration">75 minutes</span>
+                                    <span class="tutorial-lessons">15 lessons</span>
+                                </div>
+                                <h3>Building Interactive Canvas Applications</h3>
+                                <p>Create engaging interactive applications with HTML5 Canvas, including games, drawing tools, and dynamic visualizations with user input handling.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Interactivity</span>
+                                    <span class="topic-tag">Game Development</span>
+                                    <span class="topic-tag">Animation</span>
+                                    <span class="topic-tag">User Input</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Intermediate</span>
+                                    <span class="tutorial-duration">60 minutes</span>
+                                    <span class="tutorial-lessons">14 lessons</span>
+                                </div>
+                                <h3>Performance Optimization for Canvas Apps</h3>
+                                <p>Learn advanced techniques for optimizing HTML5 Canvas performance, including memory management, rendering optimization, and efficient animation strategies.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Performance</span>
+                                    <span class="topic-tag">Memory Management</span>
+                                    <span class="topic-tag">Optimization</span>
+                                    <span class="topic-tag">Debugging</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Intermediate</span>
+                                    <span class="tutorial-duration">100 minutes</span>
+                                    <span class="tutorial-lessons">20 lessons</span>
+                                </div>
+                                <h3>Creating Professional Image Editors</h3>
+                                <p>Build a complete professional-grade image editor with layers, tools, filters, and export functionality using modern web technologies.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Layer System</span>
+                                    <span class="topic-tag">Tool Architecture</span>
+                                    <span class="topic-tag">UI/UX Design</span>
+                                    <span class="topic-tag">Export Features</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Intermediate</span>
+                                    <span class="tutorial-duration">80 minutes</span>
+                                    <span class="tutorial-lessons">16 lessons</span>
+                                </div>
+                                <h3>Mobile-First Canvas Development</h3>
+                                <p>Master mobile canvas development with touch controls, gesture recognition, responsive design, and mobile-specific performance optimizations.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Touch Controls</span>
+                                    <span class="topic-tag">Gestures</span>
+                                    <span class="topic-tag">Mobile UI</span>
+                                    <span class="topic-tag">Performance</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Tutorials -->
+                <div class="tutorial-category" data-category="advanced">
+                    <h2 class="category-title">🔥 Advanced Tutorials</h2>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Advanced</span>
+                                    <span class="tutorial-duration">3 hours</span>
+                                    <span class="tutorial-lessons">25 lessons</span>
+                                </div>
+                                <h3>WebGL and GPU-Accelerated Graphics</h3>
+                                <p>Harness the power of WebGL for high-performance graphics and GPU-accelerated image processing with shaders, textures, and advanced rendering techniques.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">WebGL</span>
+                                    <span class="topic-tag">Shaders</span>
+                                    <span class="topic-tag">GPU Processing</span>
+                                    <span class="topic-tag">3D Graphics</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Advanced</span>
+                                    <span class="tutorial-duration">2.5 hours</span>
+                                    <span class="tutorial-lessons">22 lessons</span>
+                                </div>
+                                <h3>Progressive Web Apps for Image Tools</h3>
+                                <p>Build professional PWAs with offline capabilities, service workers, background sync, and native app-like experiences for image processing tools.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">PWA</span>
+                                    <span class="topic-tag">Service Workers</span>
+                                    <span class="topic-tag">Offline Support</span>
+                                    <span class="topic-tag">Background Sync</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Advanced</span>
+                                    <span class="tutorial-duration">2 hours</span>
+                                    <span class="tutorial-lessons">18 lessons</span>
+                                </div>
+                                <h3>WebAssembly for Image Processing</h3>
+                                <p>Integrate WebAssembly modules for computationally intensive image processing tasks, achieving near-native performance in web applications.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">WebAssembly</span>
+                                    <span class="topic-tag">C/C++ Integration</span>
+                                    <span class="topic-tag">Performance</span>
+                                    <span class="topic-tag">Memory Management</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Advanced</span>
+                                    <span class="tutorial-duration">3.5 hours</span>
+                                    <span class="tutorial-lessons">28 lessons</span>
+                                </div>
+                                <h3>AI-Powered Image Enhancement</h3>
+                                <p>Implement machine learning models for image enhancement, upscaling, denoising, and content-aware editing using TensorFlow.js and browser APIs.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Machine Learning</span>
+                                    <span class="topic-tag">TensorFlow.js</span>
+                                    <span class="topic-tag">Image Enhancement</span>
+                                    <span class="topic-tag">Neural Networks</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Advanced</span>
+                                    <span class="tutorial-duration">2.5 hours</span>
+                                    <span class="tutorial-lessons">20 lessons</span>
+                                </div>
+                                <h3>Real-time Collaborative Image Editing</h3>
+                                <p>Build real-time collaborative image editing systems with WebSockets, operational transformation, and conflict resolution for multi-user applications.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Real-time Collaboration</span>
+                                    <span class="topic-tag">WebSockets</span>
+                                    <span class="topic-tag">Conflict Resolution</span>
+                                    <span class="topic-tag">Multi-user Systems</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expert Tutorials -->
+                <div class="tutorial-category" data-category="expert">
+                    <h2 class="category-title">🎯 Expert Tutorials</h2>
+                    
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Expert</span>
+                                    <span class="tutorial-duration">4 hours</span>
+                                    <span class="tutorial-lessons">30 lessons</span>
+                                </div>
+                                <h3>Custom WebGL Shader Development</h3>
+                                <p>Master advanced shader programming for custom visual effects, image processing pipelines, and performance-critical graphics applications.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">GLSL Programming</span>
+                                    <span class="topic-tag">Custom Shaders</span>
+                                    <span class="topic-tag">Pipeline Optimization</span>
+                                    <span class="topic-tag">Visual Effects</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Expert</span>
+                                    <span class="tutorial-duration">5 hours</span>
+                                    <span class="tutorial-lessons">35 lessons</span>
+                                </div>
+                                <h3>Building Scalable Image Processing Architectures</h3>
+                                <p>Design and implement enterprise-level image processing systems with microservices, load balancing, and distributed computing architectures.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Microservices</span>
+                                    <span class="topic-tag">Scalability</span>
+                                    <span class="topic-tag">Distributed Systems</span>
+                                    <span class="topic-tag">Architecture Design</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Expert</span>
+                                    <span class="tutorial-duration">3.5 hours</span>
+                                    <span class="tutorial-lessons">26 lessons</span>
+                                </div>
+                                <h3>Advanced Computer Vision in Web Browsers</h3>
+                                <p>Implement sophisticated computer vision algorithms including object detection, facial recognition, and image segmentation using browser APIs.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Computer Vision</span>
+                                    <span class="topic-tag">Object Detection</span>
+                                    <span class="topic-tag">Image Segmentation</span>
+                                    <span class="topic-tag">Feature Extraction</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-content">
+                                <div class="tutorial-meta">
+                                    <span class="tutorial-level">Expert</span>
+                                    <span class="tutorial-duration">4.5 hours</span>
+                                    <span class="tutorial-lessons">32 lessons</span>
+                                </div>
+                                <h3>Optimizing Canvas for Enterprise Applications</h3>
+                                <p>Advanced optimization techniques for enterprise-level canvas applications including memory management, performance profiling, and scalability patterns.</p>
+                                <div class="tutorial-topics">
+                                    <span class="topic-tag">Enterprise Optimization</span>
+                                    <span class="topic-tag">Memory Management</span>
+                                    <span class="topic-tag">Performance Profiling</span>
+                                    <span class="topic-tag">Scalability</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path Section -->
+    <section class="section learning-path-section">
+        <div class="container">
+            <h2 class="section-title">📚 Recommended Learning Paths</h2>
+            
+            <div class="learning-paths">
+                <div class="learning-path">
+                    <div class="path-header">
+                        <h3>🎯 Web Developer Path</h3>
+                        <span class="path-duration">12-16 weeks</span>
+                    </div>
+                    <div class="path-description">
+                        <p>Perfect for web developers looking to add professional image processing capabilities to their skillset.</p>
+                    </div>
+                    <div class="path-steps">
+                        <div class="step">1. HTML5 Canvas Basics</div>
+                        <div class="step">2. JavaScript Image Processing</div>
+                        <div class="step">3. Interactive Applications</div>
+                        <div class="step">4. Performance Optimization</div>
+                        <div class="step">5. Progressive Web Apps</div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Start Path</a>
+                </div>
+
+                <div class="learning-path">
+                    <div class="path-header">
+                        <h3>🎨 Designer Path</h3>
+                        <span class="path-duration">8-12 weeks</span>
+                    </div>
+                    <div class="path-description">
+                        <p>Ideal for designers who want to understand the technical aspects of web-based image tools and create better user experiences.</p>
+                    </div>
+                    <div class="path-steps">
+                        <div class="step">1. Web Image Fundamentals</div>
+                        <div class="step">2. Canvas Basics</div>
+                        <div class="step">3. User Interface Design</div>
+                        <div class="step">4. Mobile Optimization</div>
+                        <div class="step">5. Performance & Accessibility</div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Start Path</a>
+                </div>
+
+                <div class="learning-path">
+                    <div class="path-header">
+                        <h3>⚡ Performance Specialist Path</h3>
+                        <span class="path-duration">16-20 weeks</span>
+                    </div>
+                    <div class="path-description">
+                        <p>Advanced path for developers focusing on high-performance image processing and graphics programming.</p>
+                    </div>
+                    <div class="path-steps">
+                        <div class="step">1. Advanced Canvas Techniques</div>
+                        <div class="step">2. WebGL Programming</div>
+                        <div class="step">3. WebAssembly Integration</div>
+                        <div class="step">4. GPU Acceleration</div>
+                        <div class="step">5. Enterprise Architecture</div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Start Path</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🖼️ Flash Image Preview</h3>
+                    <p>Professional HTML5 canvas-based image preview platform with interactive games and advanced processing capabilities.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Learn & Grow</h3>
+                    <ul>
+                        <li><a href="/tutorials">All Tutorials</a></li>
+                        <li><a href="#beginner">Beginner Guides</a></li>
+                        <li><a href="#advanced">Advanced Techniques</a></li>
+                        <li><a href="/resources">Free Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tools & Practice</h3>
+                    <ul>
+                        <li><a href="/tools">Interactive Tools</a></li>
+                        <li><a href="/tools#canvas-editor">Canvas Editor</a></li>
+                        <li><a href="/tools#image-viewer">Image Viewer</a></li>
+                        <li><a href="/blog">Technical Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/contact">Get Help</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flash Image Preview. All rights reserved. | Professional image tools powered by modern web technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Tutorial Category Navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const categories = document.querySelectorAll('.tutorial-category');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetCategory = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show target category
+                    categories.forEach(cat => {
+                        cat.classList.remove('active');
+                        if (cat.getAttribute('data-category') === targetCategory) {
+                            cat.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // Progress tracking for tutorial cards
+            const tutorialCards = document.querySelectorAll('.tutorial-card');
+            tutorialCards.forEach(card => {
+                const btn = card.querySelector('.btn');
+                if (btn && localStorage.getItem('tutorial_' + card.querySelector('h3').textContent)) {
+                    btn.textContent = 'Continue Learning';
+                    btn.classList.add('btn-secondary');
+                    btn.classList.remove('btn-primary');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

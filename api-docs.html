@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Flash Image Preview API Documentation - Developer Integration Guide</title>
+    <meta name="description" content="Comprehensive API documentation for Flash Image Preview tools. Learn to integrate professional image processing capabilities into your applications with RESTful APIs and JavaScript SDK.">
+    <meta name="keywords" content="image processing API, HTML5 canvas API, developer documentation, image tools integration, JavaScript SDK, RESTful API, web development">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Flash Image Preview API Documentation - Developer Guide">
+    <meta property="og:description" content="Complete API documentation for integrating professional image processing tools into your applications.">
+    <meta property="og:image" content="https://flashimagepreview.com/assets/images/og-image.png">
+    <meta property="og:url" content="https://flashimagepreview.com/api-docs">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://flashimagepreview.com/api-docs">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Analytics & Tracking -->
+    <script defer data-domain="flashimagepreview.com" src="https://click.pageview.click/js/script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo">🖼️ FlashImagePreview</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/tools">Tools</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/es" class="lang-switch">Español</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>API Documentation</h1>
+            <p>Integrate Flash Image Preview's powerful image processing capabilities into your applications with our comprehensive RESTful API and JavaScript SDK.</p>
+            <div class="hero-actions">
+                <a href="#quick-start" class="btn btn-primary">Quick Start Guide</a>
+                <a href="#api-reference" class="btn btn-secondary">API Reference</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Sidebar -->
+    <div class="docs-layout">
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <h3>Getting Started</h3>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#authentication">Authentication</a></li>
+                    <li><a href="#quick-start">Quick Start</a></li>
+                    <li><a href="#javascript-sdk">JavaScript SDK</a></li>
+                </ul>
+                
+                <h3>API Endpoints</h3>
+                <ul>
+                    <li><a href="#image-upload">Image Upload</a></li>
+                    <li><a href="#image-processing">Image Processing</a></li>
+                    <li><a href="#format-conversion">Format Conversion</a></li>
+                    <li><a href="#image-optimization">Image Optimization</a></li>
+                    <li><a href="#batch-operations">Batch Operations</a></li>
+                </ul>
+                
+                <h3>Advanced Features</h3>
+                <ul>
+                    <li><a href="#webhooks">Webhooks</a></li>
+                    <li><a href="#custom-filters">Custom Filters</a></li>
+                    <li><a href="#real-time-processing">Real-time Processing</a></li>
+                </ul>
+                
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#rate-limits">Rate Limits</a></li>
+                    <li><a href="#error-handling">Error Handling</a></li>
+                    <li><a href="#examples">Code Examples</a></li>
+                    <li><a href="#changelog">Changelog</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="docs-content">
+            <!-- Overview Section -->
+            <section id="overview" class="docs-section">
+                <h2>🚀 API Overview</h2>
+                <p>The Flash Image Preview API provides powerful image processing capabilities through a simple RESTful interface. Whether you're building a photo editor, image gallery, or any application that needs professional image processing, our API offers the tools you need.</p>
+                
+                <div class="feature-overview">
+                    <div class="feature-item">
+                        <h4>⚡ Fast Processing</h4>
+                        <p>Process images in milliseconds with our optimized infrastructure</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🔒 Secure & Private</h4>
+                        <p>Enterprise-grade security with optional client-side processing</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>📱 Universal Support</h4>
+                        <p>Works with all major image formats and platforms</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🎯 Developer Friendly</h4>
+                        <p>Simple REST API with comprehensive SDKs and documentation</p>
+                    </div>
+                </div>
+
+                <h3>Base URL</h3>
+                <div class="code-block">
+                    <code>https://api.flashimagepreview.com/v1</code>
+                </div>
+
+                <h3>Supported Formats</h3>
+                <div class="format-support">
+                    <div class="format-category">
+                        <h4>Input Formats</h4>
+                        <ul>
+                            <li>JPEG, JPG</li>
+                            <li>PNG (with transparency)</li>
+                            <li>GIF (animated support)</li>
+                            <li>WebP</li>
+                            <li>AVIF</li>
+                            <li>TIFF</li>
+                            <li>BMP</li>
+                            <li>SVG</li>
+                        </ul>
+                    </div>
+                    <div class="format-category">
+                        <h4>Output Formats</h4>
+                        <ul>
+                            <li>JPEG (optimized)</li>
+                            <li>PNG (lossless)</li>
+                            <li>WebP (modern)</li>
+                            <li>AVIF (next-gen)</li>
+                            <li>PDF (documents)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Authentication Section -->
+            <section id="authentication" class="docs-section">
+                <h2>🔐 Authentication</h2>
+                <p>All API requests require authentication using API keys. You can obtain your API key from your dashboard after creating an account.</p>
+
+                <h3>API Key Authentication</h3>
+                <p>Include your API key in the Authorization header of every request:</p>
+                
+                <div class="code-block">
+                    <pre><code>curl -H "Authorization: Bearer YOUR_API_KEY" \
+     -H "Content-Type: application/json" \
+     https://api.flashimagepreview.com/v1/process</code></pre>
+                </div>
+
+                <h3>JavaScript SDK Authentication</h3>
+                <div class="code-block">
+                    <pre><code>const flashAPI = new FlashImagePreview({
+  apiKey: 'YOUR_API_KEY',
+  environment: 'production' // or 'sandbox'
+});</code></pre>
+                </div>
+
+                <div class="info-box">
+                    <h4>🛡️ Security Best Practices</h4>
+                    <ul>
+                        <li>Never expose your API key in client-side code</li>
+                        <li>Use environment variables for API key storage</li>
+                        <li>Rotate your API keys regularly</li>
+                        <li>Use different keys for development and production</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Quick Start Section -->
+            <section id="quick-start" class="docs-section">
+                <h2>🚀 Quick Start Guide</h2>
+                <p>Get started with the Flash Image Preview API in just a few minutes. This guide will walk you through uploading and processing your first image.</p>
+
+                <h3>Step 1: Upload an Image</h3>
+                <div class="code-block">
+                    <pre><code>curl -X POST https://api.flashimagepreview.com/v1/images \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -F "image=@/path/to/your/image.jpg" \
+     -F "name=my-test-image"</code></pre>
+                </div>
+
+                <h4>Response:</h4>
+                <div class="code-block">
+                    <pre><code>{
+  "id": "img_abc123",
+  "name": "my-test-image",
+  "format": "jpeg",
+  "width": 1920,
+  "height": 1080,
+  "size": 245760,
+  "url": "https://cdn.flashimagepreview.com/img_abc123.jpg",
+  "created_at": "2025-01-15T10:30:00Z"
+}</code></pre>
+                </div>
+
+                <h3>Step 2: Process the Image</h3>
+                <div class="code-block">
+                    <pre><code>curl -X POST https://api.flashimagepreview.com/v1/images/img_abc123/process \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "operations": [
+         {"type": "resize", "width": 800, "height": 600},
+         {"type": "filter", "name": "brightness", "value": 0.1},
+         {"type": "format", "output": "webp", "quality": 90}
+       ]
+     }'</code></pre>
+                </div>
+
+                <h4>Response:</h4>
+                <div class="code-block">
+                    <pre><code>{
+  "id": "proc_xyz789",
+  "status": "completed",
+  "output": {
+    "id": "img_def456",
+    "format": "webp",
+    "width": 800,
+    "height": 600,
+    "size": 67890,
+    "url": "https://cdn.flashimagepreview.com/img_def456.webp"
+  },
+  "processing_time": 234
+}</code></pre>
+                </div>
+
+                <h3>Step 3: Download the Result</h3>
+                <p>Use the returned URL to download or display the processed image:</p>
+                <div class="code-block">
+                    <code>https://cdn.flashimagepreview.com/img_def456.webp</code>
+                </div>
+            </section>
+
+            <!-- JavaScript SDK Section -->
+            <section id="javascript-sdk" class="docs-section">
+                <h2>📦 JavaScript SDK</h2>
+                <p>Our JavaScript SDK provides a convenient way to integrate Flash Image Preview into your web applications with full TypeScript support.</p>
+
+                <h3>Installation</h3>
+                <div class="code-block">
+                    <pre><code># npm
+npm install @flashimagepreview/sdk
+
+# yarn
+yarn add @flashimagepreview/sdk
+
+# CDN
+&lt;script src="https://cdn.flashimagepreview.com/sdk/v1/flash-image-preview.min.js"&gt;&lt;/script&gt;</code></pre>
+                </div>
+
+                <h3>Basic Usage</h3>
+                <div class="code-block">
+                    <pre><code>import FlashImagePreview from '@flashimagepreview/sdk';
+
+const flash = new FlashImagePreview({
+  apiKey: 'YOUR_API_KEY'
+});
+
+// Upload and process an image
+async function processImage(file) {
+  try {
+    // Upload image
+    const uploadResult = await flash.images.upload(file, {
+      name: 'user-photo'
+    });
+    
+    // Process image
+    const processResult = await flash.images.process(uploadResult.id, {
+      operations: [
+        { type: 'resize', width: 400, height: 400, mode: 'cover' },
+        { type: 'filter', name: 'saturation', value: 0.2 },
+        { type: 'format', output: 'webp', quality: 85 }
+      ]
+    });
+    
+    return processResult.output.url;
+  } catch (error) {
+    console.error('Processing failed:', error);
+  }
+}</code></pre>
+                </div>
+
+                <h3>React Hook Example</h3>
+                <div class="code-block">
+                    <pre><code>import { useState } from 'react';
+import { useFlashImagePreview } from '@flashimagepreview/react';
+
+function ImageProcessor() {
+  const [processedUrl, setProcessedUrl] = useState(null);
+  const { processImage, isProcessing } = useFlashImagePreview();
+
+  const handleFileSelect = async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const result = await processImage(file, {
+      resize: { width: 800, height: 600 },
+      filters: [
+        { name: 'brightness', value: 0.1 },
+        { name: 'contrast', value: 0.05 }
+      ],
+      format: { output: 'webp', quality: 90 }
+    });
+
+    setProcessedUrl(result.url);
+  };
+
+  return (
+    &lt;div&gt;
+      &lt;input type="file" onChange={handleFileSelect} accept="image/*" /&gt;
+      {isProcessing && &lt;p&gt;Processing...&lt;/p&gt;}
+      {processedUrl && &lt;img src={processedUrl} alt="Processed" /&gt;}
+    &lt;/div&gt;
+  );
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- API Reference Section -->
+            <section id="api-reference" class="docs-section">
+                <h2>📋 API Reference</h2>
+
+                <!-- Image Upload -->
+                <div id="image-upload" class="endpoint-section">
+                    <h3>📤 Image Upload</h3>
+                    <div class="endpoint-header">
+                        <span class="http-method post">POST</span>
+                        <span class="endpoint-url">/images</span>
+                    </div>
+
+                    <p>Upload an image for processing. Supports multipart/form-data and base64 encoding.</p>
+
+                    <h4>Parameters</h4>
+                    <div class="param-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>image</code></td>
+                                    <td>File</td>
+                                    <td>Yes</td>
+                                    <td>The image file to upload</td>
+                                </tr>
+                                <tr>
+                                    <td><code>name</code></td>
+                                    <td>String</td>
+                                    <td>No</td>
+                                    <td>Optional name for the image</td>
+                                </tr>
+                                <tr>
+                                    <td><code>folder</code></td>
+                                    <td>String</td>
+                                    <td>No</td>
+                                    <td>Organization folder path</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>Example Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST https://api.flashimagepreview.com/v1/images \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -F "image=@photo.jpg" \
+     -F "name=profile-photo" \
+     -F "folder=user-uploads"</code></pre>
+                    </div>
+
+                    <h4>Example Response</h4>
+                    <div class="code-block">
+                        <pre><code>{
+  "id": "img_abc123def456",
+  "name": "profile-photo",
+  "folder": "user-uploads",
+  "format": "jpeg",
+  "width": 2048,
+  "height": 1536,
+  "size": 567890,
+  "url": "https://cdn.flashimagepreview.com/img_abc123def456.jpg",
+  "metadata": {
+    "camera": "iPhone 13 Pro",
+    "location": null,
+    "created_at": "2025-01-15T08:23:45Z"
+  },
+  "created_at": "2025-01-15T10:30:15Z"
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Image Processing -->
+                <div id="image-processing" class="endpoint-section">
+                    <h3>⚙️ Image Processing</h3>
+                    <div class="endpoint-header">
+                        <span class="http-method post">POST</span>
+                        <span class="endpoint-url">/images/{id}/process</span>
+                    </div>
+
+                    <p>Apply processing operations to an uploaded image. Operations are applied in sequence.</p>
+
+                    <h4>Available Operations</h4>
+                    <div class="operation-list">
+                        <div class="operation-item">
+                            <h5>Resize</h5>
+                            <div class="code-block">
+                                <pre><code>{
+  "type": "resize",
+  "width": 800,
+  "height": 600,
+  "mode": "cover", // "cover", "contain", "fill", "inside", "outside"
+  "position": "center" // "center", "top", "bottom", "left", "right"
+}</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <h5>Crop</h5>
+                            <div class="code-block">
+                                <pre><code>{
+  "type": "crop",
+  "x": 100,
+  "y": 50,
+  "width": 400,
+  "height": 300
+}</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <h5>Filters</h5>
+                            <div class="code-block">
+                                <pre><code>// Brightness
+{
+  "type": "filter",
+  "name": "brightness",
+  "value": 0.2 // -1.0 to 1.0
+}
+
+// Contrast
+{
+  "type": "filter",
+  "name": "contrast",
+  "value": 0.1 // -1.0 to 1.0
+}
+
+// Saturation
+{
+  "type": "filter",
+  "name": "saturation",
+  "value": -0.3 // -1.0 to 1.0
+}
+
+// Blur
+{
+  "type": "filter",
+  "name": "blur",
+  "value": 2.5 // 0 to 10
+}</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <h5>Format Conversion</h5>
+                            <div class="code-block">
+                                <pre><code>{
+  "type": "format",
+  "output": "webp", // "jpeg", "png", "webp", "avif"
+  "quality": 85, // 1-100 for lossy formats
+  "progressive": true // for JPEG
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Example Request</h4>
+                    <div class="code-block">
+                        <pre><code>curl -X POST https://api.flashimagepreview.com/v1/images/img_abc123/process \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "operations": [
+         {
+           "type": "resize",
+           "width": 1200,
+           "height": 800,
+           "mode": "cover"
+         },
+         {
+           "type": "filter",
+           "name": "brightness",
+           "value": 0.1
+         },
+         {
+           "type": "filter",
+           "name": "saturation",
+           "value": 0.2
+         },
+         {
+           "type": "format",
+           "output": "webp",
+           "quality": 90
+         }
+       ]
+     }'</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rate Limits Section -->
+            <section id="rate-limits" class="docs-section">
+                <h2>⚡ Rate Limits</h2>
+                <p>To ensure fair usage and optimal performance, the Flash Image Preview API implements rate limiting based on your subscription plan.</p>
+
+                <div class="rate-limit-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Requests/Minute</th>
+                                <th>Requests/Day</th>
+                                <th>Max File Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Free</td>
+                                <td>60</td>
+                                <td>1,000</td>
+                                <td>10 MB</td>
+                            </tr>
+                            <tr>
+                                <td>Pro</td>
+                                <td>300</td>
+                                <td>10,000</td>
+                                <td>50 MB</td>
+                            </tr>
+                            <tr>
+                                <td>Enterprise</td>
+                                <td>1,000</td>
+                                <td>100,000</td>
+                                <td>200 MB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Rate Limit Headers</h3>
+                <p>Every API response includes rate limit information in the headers:</p>
+                <div class="code-block">
+                    <pre><code>X-RateLimit-Limit: 300
+X-RateLimit-Remaining: 295
+X-RateLimit-Reset: 1642248300</code></pre>
+                </div>
+            </section>
+
+            <!-- Error Handling Section -->
+            <section id="error-handling" class="docs-section">
+                <h2>🚨 Error Handling</h2>
+                <p>The Flash Image Preview API uses conventional HTTP response codes to indicate the success or failure of API requests.</p>
+
+                <div class="error-codes">
+                    <div class="error-code">
+                        <h4><span class="status-code success">200</span> Success</h4>
+                        <p>Request completed successfully</p>
+                    </div>
+                    <div class="error-code">
+                        <h4><span class="status-code client-error">400</span> Bad Request</h4>
+                        <p>Invalid request parameters or malformed data</p>
+                    </div>
+                    <div class="error-code">
+                        <h4><span class="status-code client-error">401</span> Unauthorized</h4>
+                        <p>Invalid or missing API key</p>
+                    </div>
+                    <div class="error-code">
+                        <h4><span class="status-code client-error">403</span> Forbidden</h4>
+                        <p>API key doesn't have required permissions</p>
+                    </div>
+                    <div class="error-code">
+                        <h4><span class="status-code client-error">404</span> Not Found</h4>
+                        <p>Requested resource doesn't exist</p>
+                    </div>
+                    <div class="error-code">
+                        <h4><span class="status-code client-error">429</span> Too Many Requests</h4>
+                        <p>Rate limit exceeded</p>
+                    </div>
+                    <div class="error-code">
+                        <h4><span class="status-code server-error">500</span> Internal Server Error</h4>
+                        <p>Something went wrong on our end</p>
+                    </div>
+                </div>
+
+                <h3>Error Response Format</h3>
+                <div class="code-block">
+                    <pre><code>{
+  "error": {
+    "code": "INVALID_IMAGE_FORMAT",
+    "message": "Unsupported image format. Please use JPEG, PNG, or WebP.",
+    "details": {
+      "provided_format": "bmp",
+      "supported_formats": ["jpeg", "png", "webp", "avif", "gif"]
+    }
+  }
+}</code></pre>
+                </div>
+            </section>
+
+            <!-- Code Examples Section -->
+            <section id="examples" class="docs-section">
+                <h2>💡 Code Examples</h2>
+
+                <div class="example-tabs">
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="javascript">JavaScript</button>
+                        <button class="tab-btn" data-tab="python">Python</button>
+                        <button class="tab-btn" data-tab="php">PHP</button>
+                        <button class="tab-btn" data-tab="nodejs">Node.js</button>
+                    </div>
+
+                    <div class="tab-content active" data-tab="javascript">
+                        <h4>Complete Image Processing Example</h4>
+                        <div class="code-block">
+                            <pre><code>async function processUserPhoto(file) {
+  const API_KEY = 'your_api_key_here';
+  const BASE_URL = 'https://api.flashimagepreview.com/v1';
+
+  try {
+    // Upload image
+    const formData = new FormData();
+    formData.append('image', file);
+    formData.append('name', 'user-photo');
+
+    const uploadResponse = await fetch(`${BASE_URL}/images`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${API_KEY}`
+      },
+      body: formData
+    });
+
+    const uploadResult = await uploadResponse.json();
+    
+    // Process image
+    const processResponse = await fetch(`${BASE_URL}/images/${uploadResult.id}/process`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        operations: [
+          { type: 'resize', width: 800, height: 600, mode: 'cover' },
+          { type: 'filter', name: 'brightness', value: 0.1 },
+          { type: 'format', output: 'webp', quality: 85 }
+        ]
+      })
+    });
+
+    const processResult = await processResponse.json();
+    return processResult.output.url;
+    
+  } catch (error) {
+    console.error('Image processing failed:', error);
+    throw error;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-tab="python">
+                        <h4>Python Image Processing</h4>
+                        <div class="code-block">
+                            <pre><code>import requests
+import json
+
+def process_image(image_path, api_key):
+    base_url = "https://api.flashimagepreview.com/v1"
+    headers = {"Authorization": f"Bearer {api_key}"}
+    
+    # Upload image
+    with open(image_path, 'rb') as f:
+        files = {'image': f}
+        data = {'name': 'python-upload'}
+        
+        upload_response = requests.post(
+            f"{base_url}/images",
+            headers=headers,
+            files=files,
+            data=data
+        )
+        
+    upload_result = upload_response.json()
+    image_id = upload_result['id']
+    
+    # Process image
+    process_data = {
+        "operations": [
+            {"type": "resize", "width": 1200, "height": 800, "mode": "cover"},
+            {"type": "filter", "name": "saturation", "value": 0.2},
+            {"type": "format", "output": "webp", "quality": 90}
+        ]
+    }
+    
+    process_response = requests.post(
+        f"{base_url}/images/{image_id}/process",
+        headers={**headers, "Content-Type": "application/json"},
+        data=json.dumps(process_data)
+    )
+    
+    return process_response.json()['output']['url']
+
+# Usage
+api_key = "your_api_key_here"
+result_url = process_image("photo.jpg", api_key)
+print(f"Processed image: {result_url}")</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-tab="php">
+                        <h4>PHP Implementation</h4>
+                        <div class="code-block">
+                            <pre><code>&lt;?php
+
+class FlashImagePreview {
+    private $apiKey;
+    private $baseUrl = 'https://api.flashimagepreview.com/v1';
+    
+    public function __construct($apiKey) {
+        $this->apiKey = $apiKey;
+    }
+    
+    public function uploadImage($imagePath, $name = null) {
+        $ch = curl_init();
+        
+        curl_setopt_array($ch, [
+            CURLOPT_URL => $this->baseUrl . '/images',
+            CURLOPT_POST => true,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HTTPHEADER => [
+                'Authorization: Bearer ' . $this->apiKey
+            ],
+            CURLOPT_POSTFIELDS => [
+                'image' => new CURLFile($imagePath),
+                'name' => $name ?: basename($imagePath)
+            ]
+        ]);
+        
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        return json_decode($response, true);
+    }
+    
+    public function processImage($imageId, $operations) {
+        $ch = curl_init();
+        
+        curl_setopt_array($ch, [
+            CURLOPT_URL => $this->baseUrl . '/images/' . $imageId . '/process',
+            CURLOPT_POST => true,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HTTPHEADER => [
+                'Authorization: Bearer ' . $this->apiKey,
+                'Content-Type: application/json'
+            ],
+            CURLOPT_POSTFIELDS => json_encode(['operations' => $operations])
+        ]);
+        
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        return json_decode($response, true);
+    }
+}
+
+// Usage
+$flash = new FlashImagePreview('your_api_key_here');
+
+$upload = $flash->uploadImage('photo.jpg', 'test-image');
+$process = $flash->processImage($upload['id'], [
+    ['type' => 'resize', 'width' => 800, 'height' => 600],
+    ['type' => 'filter', 'name' => 'brightness', 'value' => 0.1],
+    ['type' => 'format', 'output' => 'webp', 'quality' => 85]
+]);
+
+echo "Processed image URL: " . $process['output']['url'];
+
+?&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" data-tab="nodejs">
+                        <h4>Node.js with Express</h4>
+                        <div class="code-block">
+                            <pre><code>const express = require('express');
+const multer = require('multer');
+const FormData = require('form-data');
+const fetch = require('node-fetch');
+
+const app = express();
+const upload = multer({ dest: 'uploads/' });
+
+const API_KEY = 'your_api_key_here';
+const BASE_URL = 'https://api.flashimagepreview.com/v1';
+
+app.post('/process-image', upload.single('image'), async (req, res) => {
+  try {
+    // Upload to Flash Image Preview
+    const form = new FormData();
+    form.append('image', fs.createReadStream(req.file.path));
+    form.append('name', req.file.originalname);
+
+    const uploadResponse = await fetch(`${BASE_URL}/images`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${API_KEY}`,
+        ...form.getHeaders()
+      },
+      body: form
+    });
+
+    const uploadResult = await uploadResponse.json();
+
+    // Process the image
+    const processResponse = await fetch(`${BASE_URL}/images/${uploadResult.id}/process`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        operations: [
+          { type: 'resize', width: 1200, height: 800, mode: 'cover' },
+          { type: 'filter', name: 'contrast', value: 0.1 },
+          { type: 'format', output: 'webp', quality: 90 }
+        ]
+      })
+    });
+
+    const processResult = await processResponse.json();
+    
+    // Clean up uploaded file
+    fs.unlinkSync(req.file.path);
+    
+    res.json({
+      success: true,
+      url: processResult.output.url
+    });
+
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🖼️ Flash Image Preview</h3>
+                    <p>Professional HTML5 canvas-based image preview platform with interactive games and advanced processing capabilities.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Developers</h3>
+                    <ul>
+                        <li><a href="/api-docs">API Documentation</a></li>
+                        <li><a href="#javascript-sdk">JavaScript SDK</a></li>
+                        <li><a href="#examples">Code Examples</a></li>
+                        <li><a href="/tutorials">Tutorials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/contact">Developer Support</a></li>
+                        <li><a href="#rate-limits">Rate Limits</a></li>
+                        <li><a href="#error-handling">Error Handling</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/blog">Technical Blog</a></li>
+                        <li><a href="/resources">Free Resources</a></li>
+                        <li><a href="/tools">Try Our Tools</a></li>
+                        <li><a href="/about">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flash Image Preview. All rights reserved. | Professional image tools powered by modern web technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sidebar navigation
+            const navLinks = document.querySelectorAll('.docs-nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Tab functionality for code examples
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    // Update active button
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show target content
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                        if (content.getAttribute('data-tab') === targetTab) {
+                            content.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            // Code block copy functionality
+            const codeBlocks = document.querySelectorAll('.code-block');
+            codeBlocks.forEach(block => {
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'copy-btn';
+                copyBtn.textContent = 'Copy';
+                copyBtn.addEventListener('click', function() {
+                    const code = block.querySelector('code, pre').textContent;
+                    navigator.clipboard.writeText(code).then(() => {
+                        this.textContent = 'Copied!';
+                        setTimeout(() => {
+                            this.textContent = 'Copy';
+                        }, 2000);
+                    });
+                });
+                block.appendChild(copyBtn);
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional CSS for API documentation */
+        .docs-layout {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .docs-sidebar {
+            flex: 0 0 250px;
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        .docs-nav h3 {
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .docs-nav ul {
+            list-style: none;
+            margin: 0 0 1rem 0;
+            padding: 0;
+        }
+
+        .docs-nav a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .docs-nav a:hover {
+            background: var(--surface);
+            color: var(--primary);
+        }
+
+        .docs-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .docs-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .code-block {
+            position: relative;
+            background: #1e1e1e;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .code-block pre,
+        .code-block code {
+            font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .code-block pre {
+            padding: 1.5rem;
+            margin: 0;
+            color: #e1e1e1;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .endpoint-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .http-method {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .http-method.post {
+            background: #10b981;
+            color: white;
+        }
+
+        .endpoint-url {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .param-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .param-table th,
+        .param-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .param-table th {
+            background: var(--surface);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .param-table code {
+            background: var(--surface);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .tab-nav {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .status-code {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .status-code.success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-code.client-error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .status-code.server-error {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-box h4 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+
+        @media (max-width: 768px) {
+            .docs-layout {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .docs-sidebar {
+                position: static;
+                flex: none;
+            }
+        }
+    </style>
+</body>
+</html>
